@@ -1,0 +1,26 @@
+<!-- 顶部搜索 -->
+<view class="header-nav">
+	<view class="header-city">
+		<navigator url="../selectCity/selecCity" hover-class="none">{{city}}</navigator>
+	</view>
+	<view class="header-search">
+		<navigator url="../search/search">
+			<input type="text" placeholder="搜索您喜欢的"></input>
+		</navigator>
+	</view>
+</view>
+
+<!-- 菜单 -->
+<view class="product-type">
+	<view class="item" wx:for="{{menuList}}" wx:key="index" bindtap="jumpMenu" data-id="{{item.id}}">
+		<image src="{{item.image}}"></image>
+		<view>{{item.title}}</view>
+	</view>
+</view>
+
+<!-- 引入商品列表模板 -->
+<import src="../../templates/footList/footLists.wxml" />
+<view wx:for="{{footList}}" wx:key="indedx" bindtap="jumpDetail" data-id="{{item.id}}">
+  <template is="footList" data="{{item}}"></template>
+</view>
+<!-- <button wx:if="{{isShow}}" bindtap="getMore">加载更多</button> -->

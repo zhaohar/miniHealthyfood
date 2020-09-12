@@ -1,0 +1,8 @@
+<view class="info">
+  <view class="user-logo">
+    <image src="{{avatarUrl}}"></image>
+  </view>
+  <view class="user-name">{{nickName}}</view>
+</view>
+
+<button wx:if="{{isShow}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击授权</button>

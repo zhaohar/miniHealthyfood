@@ -1,0 +1,20 @@
+@import '../../templates/footList/footList.wxss';
+
+page{
+  background: #f1f1f1;
+}
+.container{
+  padding-left: 20rpx;
+  background-color: #fff;
+}
+.search{
+  padding: 10rpx;
+}
+.search input{
+  margin: 0 auto;
+  padding-left: 10rpx;
+  background-color: #E7E6E8;
+  width: 600rpx;
+  font-size: 26rpx;
+  border-radius: 20rpx;
+}

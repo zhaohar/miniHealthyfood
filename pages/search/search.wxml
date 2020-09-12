@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="search">
+    <input type="text" placeholder="搜索您喜欢的" focus="true" bindinput="search"></input>
+  </view>
+</view>
+
+<!-- 渲染列表 引用模板-->
+<import src="../../templates/footList/footLists.wxml" />
+<view wx:for="{{list}}" wx:key="indedx" bindtap="jumpDetail" data-id="{{item.id}}">
+  <template is="footList" data="{{item}}"></template>
+</view>
+
+

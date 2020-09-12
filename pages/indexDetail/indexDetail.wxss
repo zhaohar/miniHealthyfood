@@ -1,0 +1,21 @@
+.container{
+  padding: 0 20rpx;
+}
+.container .title{
+  font-size: 30prx;
+}
+.container .image{
+  text-align: center;
+  margin: 30rpx 0;
+}
+.container .image image{
+  height: 400rpx;
+}
+.container .decs{
+  font-size: 24rpx;
+  color: #888;
+  line-height: 40rpx;
+  /* 首行缩进2字符 */
+  text-indent: 2em;
+
+}

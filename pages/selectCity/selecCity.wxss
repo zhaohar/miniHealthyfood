@@ -1,0 +1,15 @@
+.online-city{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20rpx;
+}
+.Positioning{
+  background-color: #49AB98;
+  color: #fff;
+}
+.hot-city{
+  padding: 10rpx;
+  margin: 0 20rpx;
+  font-weight: normal;
+}

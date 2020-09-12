@@ -1,0 +1,46 @@
+/* 模板样式 */
+@import '../../templates//footList//footList.wxss';
+
+/* 顶部搜索样式 */
+page{
+  background: #f1f1f1;
+}
+.header-nav{
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10rpx;
+  /* margin-top: 20rpx; */
+}
+.header-nav .header-city{
+  text-align: center;
+}
+.header-nav .header-search input{
+  padding-left: 10rpx;
+  background-color: #E7E6E8;
+  width: 600rpx;
+  font-size: 26rpx;
+  border-radius: 20rpx;
+}
+
+/* 菜单分类样式 */
+.product-type{
+  background: #fff;
+  display: flex;
+  /* justify-content: space-around; */
+  /* 自动换行 */
+  flex-wrap: wrap;
+  padding: 20rpx;
+}
+.product-type .item{
+  width: 25%;
+  text-align: center;
+  font-size: 26rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+}
+.product-type .item image{
+  width: 74rpx;
+  height: 74rpx;
+}
+

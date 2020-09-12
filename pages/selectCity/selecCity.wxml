@@ -1,0 +1,6 @@
+<view class="online-city">当前城市</view>
+<button type="success" size="mini" class="Positioning" bindtap="positioning">定位</button>
+<view>热门城市</view>
+<button type="success" size="mini" class="hot-city" wx:for="{{hotCity}}" wx:key="index" bindtap="selectHotCity" data-id="{{item}}">
+  {{item}}
+</button>

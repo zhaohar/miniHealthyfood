@@ -1,0 +1,44 @@
+<view wx:for="{{list}}" wx:key="index" class="shopcar {{item.isTouchMove?'touch-move-active':''}}" bindtouchstart="touchstart" bindtouchmove="touchmove" data-id="{{index}}">
+  <view class="item">
+    <!-- 选择 -->
+    <view class="select">
+      <icon type="success" wx:if="{{item.select}}" bindtap="selectList" data-id="{{index}}"></icon>
+      <icon type="circle" color="#999" wx:else bindtap="selectList" data-id="{{index}}"></icon>
+    </view>
+    <!-- 图片 -->
+    <view class="shop-img">
+      <image src="{{item.pic}}"></image>
+    </view>
+    <!-- 内容 -->
+    <view class="content"> 
+      <view class="title">{{item.name}}</view>
+      <view class="fu-title">{{item.info}}</view>
+      <view class="price">￥{{item.price}}</view>
+      <view class="updata">
+        <view class="reduce" bindtap="Reduc" data-id="{{index}}">-</view>
+        <view class="num">{{item.num}}</view>
+        <view class="add" bindtap="add" data-id="{{index}}">+</view>
+      </view>
+    </view>
+  </view>
+  <view class="remove" bindtap="removeShop" data-id="{{item.id}}">删除</view>
+</view>
+<!-- 结算 -->
+<view class='bottom'>
+  <view class='all'>
+    <icon wx:if="{{selectAllStatus}}" bindtap="selectedAll" type="success" />
+    <icon wx:else type="circle" bindtap="selectedAll" />
+    <text class="check-all">全选</text>
+
+  </view>
+
+  <view class='sum'>
+    <text class='he'>合计</text>
+    <text>￥{{totalPrice}}</text>
+    <text class='small'>不含运费</text>
+  </view>
+
+  <view class='balance' wx:if='{{selectButton}}' bindtap="jumpPlay">结算（{{totalPrice}}）</view>
+  <view class='balance-gray balance' wx:else>结算（{{totalPrice}}）</view>
+
+</view>

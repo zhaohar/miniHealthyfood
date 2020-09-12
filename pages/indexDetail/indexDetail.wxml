@@ -1,0 +1,11 @@
+<view class="container">
+	<view class="title">
+		{{list[0].title}}
+	</view>
+	<view class="image">
+		<image src="{{list[0].image}}"></image>
+	</view>
+	<view class="decs">
+		{{list[0].detail}}
+	</view>
+</view>

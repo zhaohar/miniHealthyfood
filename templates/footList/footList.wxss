@@ -1,0 +1,38 @@
+/* 商品详情样式 */
+.container{
+  background: #fff;
+  margin-top: 20rpx;
+  padding: 20rpx;
+  display: flex;
+}
+.prd-img image {
+  width: 184rpx;
+  height: 184rpx;
+}
+/* 右边介绍 */
+.prd-detail{ 
+  padding-left: 20rpx;
+  position: relative;
+}
+.prd-detail .prd-info{
+  margin-bottom: 20rpx;
+  color: #333;
+}
+.prd-detail .prd-money{
+  /* margin-bottom: 40rpx; */
+  color: #666;
+  font-size: 26rpx;
+}
+.prd-detail .prd-buy{
+  display: flex;
+  position: absolute;
+  bottom: 0rpx;
+}
+.prd-detail .prd-buy .prd-price{
+  margin-right: 40rpx;
+  color: orangered;
+  font-size: 25rpx;
+}
+.prd-detail .prd-buy .prd-num{
+  font-size: 25rpx;
+}

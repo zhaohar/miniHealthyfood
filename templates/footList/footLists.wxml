@@ -1,0 +1,17 @@
+<template name="footList">
+	<view class="container">
+		<!-- 图片 -->
+		<view class="prd-img">
+			<image src="{{item.pic}}"></image>
+		</view>
+		<!-- 介绍 -->
+		<view class="prd-detail">
+			<view class="prd-info">{{item.name}}</view>
+			<view class="prd-money">{{item.description}}</view>
+			<view class="prd-buy">
+				<view class="prd-price">￥{{item.price}}元</view>
+				<view class="prd-num">{{item.buynum}}人付款</view>
+			</view>
+		</view>
+	</view>
+</template>

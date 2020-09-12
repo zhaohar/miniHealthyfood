@@ -1,0 +1,5 @@
+<!-- 引入商品列表模板 -->
+<import src="../../templates/footList/footLists.wxml" />
+<view wx:for="{{list}}" wx:key="indedx" bindtap="jumpDetail" data-id="{{item.id}}">
+  <template is="footList" data="{{item}}"></template>
+</view>

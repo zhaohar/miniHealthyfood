@@ -1,0 +1,61 @@
+/* pages/productDetail/productDetail.wxss */
+page{
+  background: #f1f1f1;
+}
+.prd-name{
+  background: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.prd-ping{
+  background: #fff;
+  padding: 20rpx;
+  color: #999;
+  margin-bottom: 20rpx;
+}
+.prd-info{
+  background: #fff;
+  padding: 14rpx;
+  margin-bottom: 130rpx;
+}
+.prd-info image{
+  width: 100%;
+  height: 500rpx;
+}
+.prd-detail{
+  color: #666;
+  font-size: 28rpx;
+}
+.prd-desc{
+  color: #666;
+  font-size: 28rpx;
+  line-height: 44rpx;
+
+}
+/* 购物车 */
+.shopcar{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #f9f9f9;
+  padding: 20rpx;
+  font-size: 26rpx;
+  border-top: 1rpx solid #eee;
+}
+.shopcar-img image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.go-shopcar{
+  margin: 0rpx 20rpx;
+  color: orange;
+}
+.buy-shop{
+  color:#DD5145;
+}

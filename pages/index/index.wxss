@@ -1,0 +1,100 @@
+/* 轮播图样式 */
+.banner {
+  height: 338rpx;
+  position: relative;
+}
+
+.banner image {
+  width: 100%;
+  height: 338rpx;
+}
+
+.banner swiper-item {
+  position: relative;
+}
+
+.banner .desc {
+  /* height: 60rpx; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  color: #fff;
+  text-align: center;
+  /* line-height: 60rpx; */
+}
+
+.banner .banner-num {
+  position: absolute;
+  color: #fff;
+  right: 20rpx;
+  bottom: 40rpx;
+}
+
+/* 每日一测样式 */
+.one-day {
+  display: flex;
+  /* 两端等间距 */
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20rpx;
+  margin-bottom: 34rpx;
+}
+
+.one-day image {
+  width: 306rpx;
+  height: 185rpx;
+}
+
+.one-day .one-day-title {
+  text-align: center;
+  font-size: 28rpx;
+  color: #676565;
+}
+
+/* 首页列表 */
+.list {
+  padding: 0 20rpx;
+  /* height: 180rpx; */
+}
+
+.list-item {
+  border-bottom: 1rpx solid #eee;
+  position: relative;
+  margin-bottom: 15rpx;
+  /* height: 250rpx; */
+}
+
+.list-item .ready-num {
+  position: absolute;
+  right: 20rpx;
+  bottom: 0rpx;
+  color: #DD5044;
+  font-size: 25rpx;
+}
+
+.list-item .list-title {
+  font-size: 30rpx;
+  color: #1a1a1a;
+  margin-bottom: 18rpx;
+}
+
+.list-item .list-detail {
+  display: flex;
+}
+
+.list-item .list-detail .list-left image {
+  width: 210rpx;
+  height: 140rpx;
+}
+
+.list-item .list-detail .list-right {
+  color: #777;
+  font-size: 26rpx;
+  padding-left: 20rpx;
+  /* 一行隐藏 */
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap */
+}

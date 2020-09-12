@@ -1,0 +1,18 @@
+<view class="prd-name">{{productInfo.name}}</view>
+<view class="prd-ping">暂无评论</view>
+<view class="prd-info">
+  <view class="prd-detail">商品详情</view>
+  <image src="{{productInfo.pic}}"></image>
+  <view class="prd-desc">
+    <view>{{productInfo.description}}</view>
+    {{productInfo.details}}
+  </view>
+</view>
+<!-- 购物车 -->
+<view class="shopcar">
+  <view class="buy-shop">直接购买</view>
+  <view class="go-shopcar" bindtap="addShopcar">加入购物车</view>
+  <view class="shopcar-img" bindtap="jumpShopcar">
+    <image src="../../images/shopcar.png"></image>
+  </view>
+</view>

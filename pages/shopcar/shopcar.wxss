@@ -1,0 +1,144 @@
+page{
+  background: #f1f1f1;
+}
+.shopcar{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+.remove{
+  background-color: orangered;
+  color: #fff;
+  display: flex;
+  width: 90rpx;
+  justify-content: center;
+  align-items: center;
+  /* 默认隐藏 */
+  transform: translateX(90px);
+  transition: all .4s;  
+}
+.item{
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  transform: translateX(90px);
+  margin-left: -90px;
+  transition: all .4s;
+}
+/* 滑动显示动画 */
+.touch-move-active .item, .touch-move-active .remove{
+  transform: translateX(0);
+}
+
+.select{
+  padding-right: 15rpx
+}
+.shop-img image{
+  width: 180rpx;
+  height: 180rpx;
+}
+.content{
+  height: 180rpx;
+  position: relative;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+
+}
+.title{
+  margin-bottom: 10rpx;
+  width: 544rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.fu-title{
+  width: 544rpx;
+  font-size: 28rpx;
+  color: #999;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.price{
+  position: absolute;
+  left: 20rpx;
+  bottom: 0;
+  color: orangered;
+}
+.updata{
+  position: absolute;
+  bottom: 0;
+  left: 300rpx;
+  width: 200rpx;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.reduce{
+  width: 40rpx;
+  height: 40rpx;
+  border: 1rpx solid #999;
+}
+.add{
+  width: 40rpx;
+  height: 40rpx;
+  border: 1rpx solid #666;
+  color: #fff;
+  background-color: #111;
+}
+.num{
+  width: 80rpx;
+  text-align: center;
+}
+
+/*  */
+
+.bottom {
+  position: fixed;
+  background: #fff;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.all  {
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+}
+.sum text {
+  color: #51b897;
+}
+
+.sum {
+  flex: 1;
+  padding-top: 20rpx;
+  text-align: right;
+}
+
+.sum .he {
+  color: #000;
+  margin-right: 10rpx;
+}
+
+.sum .small {
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 10rpx;
+}
+
+.balance {
+  margin-left: 10rpx;
+  padding: 20rpx;
+  text-align: right;
+  background: #51b897;
+  color: #fff;
+}
+.balance-gray{
+  background: #999;
+}

@@ -1,0 +1,45 @@
+<!-- 轮播图部分 -->
+<view class="banner">
+	<swiper indicator-dots="true" indicator-active-color="#C1C1C1" autoplay="true" interval="3000" circular="true" bindchange="swiperChange">
+		<swiper-item wx:for="{{bannerLists}}" wx:key="index">
+			<image src="{{item.image}}"></image>
+			<view class="desc">{{item.title}}</view>
+		</swiper-item>
+	</swiper>
+	<!--  -->
+	<view class="banner-num">{{current + 1}}/{{bannerLists.length}}</view>
+</view>
+<!-- 每日一测部分 -->
+<view class="one-day">
+	<view class="left">
+		<image src="../../images/info_left.jpg"></image>
+		<view class="one-day-title">每日一测</view>
+	</view>
+	<view class="right">
+		<image src="../../images/info_right.jpg"></image>
+		<view class="one-day-title">每日食谱</view>
+	</view>
+</view>
+<!-- 首页列表 -->
+<view class="list">
+	<view class="list-item" wx:for="{{homeList}}" wx:key="index">
+		<navigator url="../indexDetail/indexDetail?id={{item.id}}">
+			<!-- 标题 -->
+			<view class="list-title">
+				{{item.title}}
+			</view>
+			<!-- 下面的详情 -->
+			<view class="list-detail">
+				<!-- 图片 -->
+				<view class="list-left">
+					<image src="{{item.image}}"></image>
+				</view>
+				<!-- 描述 -->
+				<view class="list-right">
+					{{item.desc}}
+				</view>
+			</view>
+		</navigator>
+		<view class="ready-num">{{item.readNum}}次阅读</view>
+	</view>
+</view>
